@@ -1,21 +1,49 @@
-header{
+.navbar{
+    
     
 
 
     nav{
-        display: flex;
-        justify-content: center; 
-        padding: 4%;
-        color:  darken(@colortwo, 30%);
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       white-space: nowrap;
+       border: red solid .2rem;
+       
 
+      
+    
+        @media @mobile{
+            border: blue solid .2rem;
+       
+        }
+
+
+        h1{
+            padding: 3%;
+            font-size: 2rem;
+            font-style: italic;
+            font-weight: bolder;
+          
+        
+        }
     
         
 
         a{
-            font-size: 1.75rem;
             text-decoration: none;
-            padding: .2%;
-            white-space: nowrap;
+            font-size: 1.2rem;
+            border: .1rem solid black;
+            padding: 1%;
+            width: 50%;
+            text-align: center;
+            padding: 1%;
+            border-radius: .5rem;
+            
+
+
+            
+            
         }
 
     a:hover{

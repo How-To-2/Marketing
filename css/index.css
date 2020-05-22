@@ -94,22 +94,37 @@ video {
   font: inherit;
   vertical-align: baseline;
 }
-header nav {
+.navbar nav {
   display: flex;
-  justify-content: center;
-  padding: 4%;
-  color: #000000;
-}
-header nav a {
-  font-size: 1.75rem;
-  text-decoration: none;
-  padding: 0.2%;
+  flex-direction: column;
+  align-items: center;
   white-space: nowrap;
+  border: red solid 0.2rem;
 }
-header nav a:hover {
+@media (min-width: 700px) {
+  .navbar nav {
+    border: blue solid 0.2rem;
+  }
+}
+.navbar nav h1 {
+  padding: 3%;
+  font-size: 2rem;
+  font-style: italic;
+  font-weight: bolder;
+}
+.navbar nav a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  border: 0.1rem solid black;
+  width: 50%;
+  text-align: center;
+  padding: 1%;
+  border-radius: 0.5rem;
+}
+.navbar nav a:hover {
   color: #000000;
 }
-header nav {
-  display: flexbox;
-  flex-direction: row;
+section div {
+  border: red 2rem solid;
+  padding: 5%;
 }
