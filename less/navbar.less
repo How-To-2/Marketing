@@ -8,7 +8,10 @@
        flex-direction: column;
        align-items: center;
        white-space: nowrap;
-       border: red solid .2rem;
+       border: pink solid .2rem;
+       padding: 1%;
+       border-bottom: @primary .1rem dashed;
+       padding-bottom: 2%;
        
 
       
@@ -24,6 +27,7 @@
             font-size: 2rem;
             font-style: italic;
             font-weight: bolder;
+    
           
         
         }
@@ -33,22 +37,20 @@
         a{
             text-decoration: none;
             font-size: 1.2rem;
-            border: .1rem solid black;
+            border: .1rem solid @dark;
             padding: 1%;
             width: 50%;
             text-align: center;
             padding: 1%;
             border-radius: .5rem;
-            
-
-
-            
+            color: @dark;
+        
             
         }
 
-    a:hover{
-        color: darken(@colortwo, 50%);
-    }    
+        a:hover{
+            color: darken(@yellow, 30%);
+               }    
 
         
 
