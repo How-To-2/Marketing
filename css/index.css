@@ -198,7 +198,7 @@ video {
   border-radius: 5rem;
 }
 #landing-main {
-  background-image: url("../image/blueprintwhite.jpg");
+  background-image: url("../image/bluePrintFade.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100%;
@@ -206,7 +206,6 @@ video {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  opacity: 1;
 }
 @media (min-width: 550px) {
   #landing-main {
@@ -229,7 +228,8 @@ video {
   font-size: 2.5rem;
   white-space: nowrap;
   align-self: center;
-  color: #f4f4fb;
+  color: #191943;
+  font-weight: bolder;
 }
 @media (min-width: 1000px) {
   #landing-main h2 {
@@ -238,16 +238,19 @@ video {
 }
 #landing-main p {
   align-self: center;
-  color: #f4f4fb;
+  color: #191943;
   padding: 1%;
   font-size: 1.5rem;
+  font-weight: bold;
+  width: 90%;
+  text-align: center;
 }
 @media (min-width: 1000px) {
   #landing-main p {
     font-size: 1.6rem;
   }
 }
-#landing-main p .btn {
+#landing-main .btn {
   align-self: center;
   font-size: 1.2rem;
   font-weight: bolder;
@@ -275,6 +278,8 @@ video {
   color: #191943;
 }
 .review-Text {
+  display: flex;
+  justify-content: center;
   background-color: #191943;
   height: 4rem;
   text-align: center;
@@ -282,18 +287,17 @@ video {
   margin-bottom: 2%;
   margin-top: 1%;
 }
-@media (min-width: 1000px) {
-  .review-Text {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-  }
+.review-Text h2 {
+  align-self: center;
+  font-size: 1.5rem;
 }
 .reviewers {
   display: flex;
   flex-direction: column;
   padding: 2%;
   border-bottom: #333388 0.1rem dashed;
+  font-size: 1.1rem;
+  color: #191943;
 }
 @media (min-width: 1000px) {
   .reviewers {
@@ -339,6 +343,9 @@ video {
     width: 50%;
   }
 }
+.reviewers .reviewer1 p span {
+  font-weight: bold;
+}
 .reviewers .reviewer2 {
   display: flex;
   flex-direction: column;
@@ -378,4 +385,7 @@ video {
   .reviewers .reviewer2 p {
     width: 50%;
   }
+}
+.reviewers .reviewer2 p span {
+  font-weight: bold;
 }

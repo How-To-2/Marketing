@@ -1,7 +1,7 @@
 
 
 #landing-main{
-    background-image: url("../image/blueprintwhite.jpg");
+    background-image: url("../image/bluePrintFade.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100%;
@@ -9,7 +9,9 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    opacity: 1;
+
+  
+    
 
     @media @mobile{
       
@@ -37,7 +39,10 @@
         font-size: 2.5rem;
         white-space: nowrap;
         align-self: center;
-        color:@white;
+        color:@dark;
+        font-weight: bolder;
+
+    
     
     @media @screen {
         font-size: 3rem;
@@ -48,14 +53,19 @@
 
     p{
      align-self: center;   
-     color: @white;
+     color: @dark;
      padding: 1%;
      font-size: 1.5rem;
+     font-weight: bold;
+     width: 90%;
+     text-align: center;
     
      @media @screen {
          font-size: 1.6rem;
    
      }
+
+    }
     
 
     .btn{
@@ -64,15 +74,14 @@
      margin-top: 5%;
 
 
-     @media @screen {
-         
-     }
-
     }
 
 
+
 }
-}
+
+
+
 
 .landing-intro{
 
@@ -98,21 +107,29 @@
 
 
 .review-Text{
+        display: flex;
+        justify-content: center;
         background-color: @dark;
         height: 4rem;
         text-align: center;
         color: @white;
         margin-bottom: 2%;
         margin-top: 1%;
+        
   
         @media @screen {
-            display: flex;
-            flex-direction: column;
-            width: 100%;
+          
             
   
         }
+
+        h2{
+            align-self: center;
+            font-size: 1.5rem;
+        }   
+    
 }
+
 
 
 
@@ -124,6 +141,8 @@
     flex-direction: column;
     padding: 2%;
     border-bottom: @primary .1rem dashed;
+    font-size: 1.1rem;
+    color: @dark;
 
 
     @media @screen{
@@ -139,6 +158,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        
 
     
         @media @mobile{
@@ -174,10 +194,15 @@
        p{
            width: 80%;
            padding: 2%;
+           
 
            @media @screen {
                width: 50%;
                
+           }
+
+           span{
+               font-weight: bold;
            }
        }
    
@@ -217,9 +242,15 @@
        p{
            width: 80%;
            padding: 2%;
+           
+           
 
            @media @screen{
                width: 50%;
+           }
+
+           span{
+               font-weight: bold;
            }
        }
 
