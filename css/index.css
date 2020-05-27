@@ -264,6 +264,9 @@ video {
   text-decoration: none;
   margin-top: 5%;
 }
+#landing-main .btn:hover {
+  color: #cccc00;
+}
 .landing-intro {
   display: flex;
   justify-content: center;
