@@ -1,5 +1,7 @@
+
+
 #landing-main{
-    background-image: url("../image/puzzle.jpg");
+    background-image: url("../image/blueprintwhite.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100%;
@@ -22,12 +24,12 @@
     }
 
     @media @screen {
-        height: 35rem;
+        
         
     }
 
     @media @big{
-        height: 50rem;
+        height: 40rem;
     }
 
    
@@ -40,6 +42,8 @@
     
     @media @screen {
         font-size: 3rem;
+    
+        
     }
 
     }
@@ -53,36 +57,43 @@
     
      @media @screen {
          font-size: 1.6rem;
+   
+         
 
      }
-    }
+    
 
     .btn{
      align-self: center; 
      .pushIt();
      margin-top: 5%;
 
-     
 
      @media @screen {
-         width: 15%;
-         margin: initial;
-         margin-top: 2%;
+         
+         
      }
-    .btn:hover{
-        color: red;
-    }
+
+     
+    
+
+    
+    
     }
 
 
 }
+}
 
 .landing-intro{
+
      display: flex;
      justify-content: center;
      border-bottom: @primary .1rem dashed;
      padding-top: 1%;
+     
 
+    
     p{
       width: 95%;
       align-content: center;
@@ -91,6 +102,114 @@
       color: @dark;
      
    
+
+    }
+
+}
+
+
+
+
+
+.reviewers{
+    display: flex;
+    flex-direction: column;
+    padding: 2%;
+    border-bottom: @primary .1rem dashed;
+
+    @media @screen{
+        flex-direction: row;
+    }
+
+   
+    
+    
+
+    .reviewer1{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    
+        @media @mobile{
+            flex-direction: row;
+        }
+
+        @media @screen{
+           
+        }
+    
+    
+      
+    
+          
+        img{
+            width: 50%;
+            border-radius: 8rem;
+            
+
+            @media @mobile{
+                max-width: 20rem;
+            }
+
+            @media @screen{
+                height:auto;
+                width: 50%;
+            }
+           
+         
+        }
+
+       p{
+           width: 80%;
+           padding: 2%;
+
+           @media @screen {
+               width: 50%;
+               
+           }
+       }
+   
+
+    }
+
+    .reviewer2{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    
+        @media @mobile{
+            flex-direction: row-reverse;
+        }
+
+        @media @screen{
+            flex-direction: initial;
+           
+        }
+
+        img{
+
+          width: 50%;
+          border-radius: 8rem;
+
+          @media @mobile{
+              max-width: 20rem;
+          }
+
+          @media @screen{
+              width: 50%;
+              height: auto;
+          }
+        }
+
+       p{
+           width: 80%;
+           padding: 2%;
+
+           @media @screen{
+               width: 50%;
+           }
+       }
 
     }
 }
