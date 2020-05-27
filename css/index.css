@@ -274,6 +274,21 @@ video {
   padding-bottom: 2%;
   color: #191943;
 }
+.review-Text {
+  background-color: #191943;
+  height: 4rem;
+  text-align: center;
+  color: #f4f4fb;
+  margin-bottom: 2%;
+  margin-top: 1%;
+}
+@media (min-width: 1000px) {
+  .review-Text {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+}
 .reviewers {
   display: flex;
   flex-direction: column;
@@ -293,6 +308,11 @@ video {
 @media (min-width: 550px) {
   .reviewers .reviewer1 {
     flex-direction: row;
+  }
+}
+@media (min-width: 1000px) {
+  .reviewers .reviewer1 {
+    width: 50%;
   }
 }
 .reviewers .reviewer1 img {
@@ -332,6 +352,7 @@ video {
 @media (min-width: 1000px) {
   .reviewers .reviewer2 {
     flex-direction: initial;
+    width: 50%;
   }
 }
 .reviewers .reviewer2 img {
