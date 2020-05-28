@@ -6,8 +6,7 @@
     background-position: center;
     background-size: 100%;
     height: 22rem;
-    display: flex;
-    flex-direction: column;
+    .centeringColumn();
     justify-content: center;
 
   
@@ -32,35 +31,41 @@
    
 
     h2{
-        font-size: 3rem;
         white-space: nowrap;
         align-self: center;
-        color:@dark;
         font-weight: bolder;
         text-transform: uppercase;
+        .words(3rem, @dark);
+
+         
+         @media @inbetween{
+               font-size:3.5rem ;
+         }
 
     
-    
-    @media @screen {
-        font-size: 4rem;
+         @media @screen {
+                font-size: 4rem;
         
-    }
+        }
     }
 
 
     p{
      align-self: center;   
-     color: @dark;
-     padding: 1%;
-     font-size: 1.5rem;
+     padding: 1%;  
      font-weight: bold;
      width: 90%;
      text-align: center;
+     .words(1.5rem, @dark);
+
+         @media @inbetween{
+             font-size: 1.6rem;
+        }
     
-     @media @screen {
-         font-size: 1.6rem;
+        @media @screen {
+             font-size: 1.8rem;
    
-     }
+        }
 
     }
     
@@ -96,9 +101,8 @@
     p{
       width: 95%;
       align-content: center;
-      font-size: 1.2rem;
       padding-bottom: 2%;
-      color: @dark;
+      .words(1.2rem, @dark);
      
    
 
@@ -129,12 +133,10 @@
 
 
 .reviewers{
-    display: flex;
-    flex-direction: column;
+    .centeringColumn();
     padding: 2%;
     border-bottom: @primary .1rem dashed;
-    font-size: 1.1rem;
-    color: @dark;
+    .words(1.1rem, @dark);
 
 
     @media @screen{
@@ -145,8 +147,7 @@
   
     
     .reviewer1{
-        display: flex;
-        flex-direction: column;
+        .centeringColumn();
         align-items: center;
         
 
@@ -200,8 +201,7 @@
     }
 
     .reviewer2{
-        display: flex;
-        flex-direction: column;
+        .centeringColumn();
         align-items: center;
     
         @media @mobile{
@@ -215,9 +215,8 @@
         }
 
         img{
-
-          width: 50%;
-          border-radius: 8rem;
+            width: 50%;
+            border-radius: 8rem;
 
           @media @mobile{
               max-width: 20rem;

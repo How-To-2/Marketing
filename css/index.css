@@ -114,10 +114,10 @@ video {
 .navbar nav h1 {
   padding-top: 2%;
   padding-bottom: 2%;
-  font-size: 2rem;
   font-weight: bolder;
-  color: #191943;
   text-transform: uppercase;
+  font-size: 2rem;
+  color: #191943;
 }
 @media (min-width: 550px) {
   .navbar nav h1 {
@@ -135,15 +135,15 @@ video {
 }
 .navbar nav a {
   text-decoration: none;
-  font-size: 1.2rem;
   border: 0.1rem solid #333388;
   width: 75%;
   text-align: center;
   padding: 1%;
   border-radius: 0.5rem;
-  color: #191943;
   font-weight: bold;
   margin: 0.25%;
+  font-size: 1.2rem;
+  color: #191943;
 }
 @media (min-width: 550px) {
   .navbar nav a {
@@ -165,8 +165,8 @@ video {
 }
 .footer {
   display: flex;
-  justify-content: flex-start;
   flex-direction: column;
+  justify-content: flex-start;
   background-color: #191943;
   height: 5rem;
   color: #f4f4fb;
@@ -234,12 +234,17 @@ video {
   }
 }
 #landing-main h2 {
-  font-size: 3rem;
   white-space: nowrap;
   align-self: center;
-  color: #191943;
   font-weight: bolder;
   text-transform: uppercase;
+  font-size: 3rem;
+  color: #191943;
+}
+@media (min-width: 700px) {
+  #landing-main h2 {
+    font-size: 3.5rem;
+  }
 }
 @media (min-width: 1000px) {
   #landing-main h2 {
@@ -248,16 +253,21 @@ video {
 }
 #landing-main p {
   align-self: center;
-  color: #191943;
   padding: 1%;
-  font-size: 1.5rem;
   font-weight: bold;
   width: 90%;
   text-align: center;
+  font-size: 1.5rem;
+  color: #191943;
+}
+@media (min-width: 700px) {
+  #landing-main p {
+    font-size: 1.6rem;
+  }
 }
 @media (min-width: 1000px) {
   #landing-main p {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
   }
 }
 #landing-main .btn {
@@ -286,8 +296,8 @@ video {
 .landing-intro p {
   width: 95%;
   align-content: center;
-  font-size: 1.2rem;
   padding-bottom: 2%;
+  font-size: 1.2rem;
   color: #191943;
 }
 .review-Text {
@@ -448,12 +458,22 @@ video {
   padding: 10%;
 }
 .slideshow .slideshow-item .slideshow-item-text a {
-  font-size: 3rem;
   text-transform: uppercase;
+  font-size: 3rem;
   color: #f4f4fb;
+}
+@media (min-width: 1000px) {
+  .slideshow .slideshow-item .slideshow-item-text a {
+    font-size: 4rem;
+  }
 }
 .slideshow .slideshow-item .slideshow-item-text p {
   font-size: 1.1rem;
+}
+@media (min-width: 1000px) {
+  .slideshow .slideshow-item .slideshow-item-text p {
+    font-size: 1.5;
+  }
 }
 @keyframes cycleImages {
   25% {

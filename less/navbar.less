@@ -4,8 +4,7 @@
 
 
     nav{
-       display: flex;
-       flex-direction: column;
+       .centeringColumn();
        align-items: center;
        white-space: nowrap;
        padding: 1%;
@@ -29,10 +28,9 @@
         h1{
             padding-top: 2%;
             padding-bottom: 2%;
-            font-size: 2rem;
             font-weight: bolder;
-            color: @dark;
             text-transform: uppercase;
+            .words(2rem, @dark);
     
          @media @mobile{
              flex: 2;
@@ -53,16 +51,15 @@
 
         a{
             text-decoration: none;
-            font-size: 1.2rem;
             border: .1rem solid @primary;
             padding: 1%;
             width: 75%;
             text-align: center;
             padding: 1%;
             border-radius: .5rem;
-            color: @dark;
             font-weight: bold;
             margin: .25%;
+            .words(1.2rem, @dark);
 
         @media @mobile{
             padding: initial;
