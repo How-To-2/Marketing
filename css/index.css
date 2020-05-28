@@ -406,6 +406,8 @@ video {
   width: inherit;
   height: inherit;
   position: absolute;
+  opacity: 0;
+  animation: cycleImages 31s infinite;
 }
 .slideshow .slideshow-item img {
   width: 100%;
@@ -427,4 +429,21 @@ video {
 }
 .slideshow .slideshow-item .slideshow-item-text p {
   font-size: 1rem;
+}
+@keyframes cycleImages {
+  25% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 0;
+  }
+}
+slideshow-item:nth-child(1) {
+  animation-delay: 0s;
+}
+.slideshow-item:nth-child(2) {
+  animation-delay: 10s;
+}
+.slideshow-item:nth-child(3) {
+  animation-delay: 20s;
 }
