@@ -105,16 +105,10 @@ video {
 }
 @media (min-width: 550px) {
   .navbar nav {
-    border: blue solid 0.2rem;
     flex-direction: row;
     padding: initial;
     background-color: #191943;
     padding: 1%;
-  }
-}
-@media (min-width: 1000px) {
-  .navbar nav {
-    border: red 0.2rem dashed;
   }
 }
 .navbar nav h1 {
@@ -231,7 +225,6 @@ video {
 }
 @media (min-width: 700px) {
   #landing-main {
-    border: pink dotted;
     height: 28rem;
   }
 }
